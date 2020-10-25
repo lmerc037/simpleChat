@@ -67,7 +67,9 @@ public class ChatClient extends AbstractClient
 		quit();
 	}
 
-  
+  public void connectionClosed() {
+		clientUI.display("Connection closed.");
+	}
 
   
 
