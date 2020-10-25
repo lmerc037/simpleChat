@@ -68,7 +68,7 @@ public class ChatClient extends AbstractClient
 	}
 
   public void connectionClosed() {
-		clientUI.display("Connection closed.");
+		clientUI.display("Connection closed to"+  getHost() + ":"+ getPort()  );
 	}
 
   
