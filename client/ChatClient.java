@@ -58,6 +58,18 @@ public class ChatClient extends AbstractClient
   {
     clientUI.display(msg.toString());
   }
+  
+  
+  
+  
+  public void connectionException(Exception exception) {
+		clientUI.display("Connection Lost to server :( ");
+		quit();
+	}
+
+  
+
+  
 
   /**
    * This method handles all data coming from the UI            
